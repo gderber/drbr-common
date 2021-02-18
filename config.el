@@ -1,48 +1,48 @@
-;;; config.el --- 
-;; 
+;;; config.el ---
+;;
 ;; Filename: config.el
-;; Description: 
+;; Description:
 ;; Author: Geoff S Derber
-;; Maintainer: 
+;; Maintainer:
 ;; Created: Mon Jun 10 18:42:03 2019 (-0400)
-;; Version: 
+;; Version:
 ;; Package-Requires: ()
 ;; Last-Updated: Mon Jun 10 18:42:09 2019 (-0400)
 ;;           By: Geoff S Derber
 ;;     Update #: 1
-;; URL: 
-;; Doc URL: 
-;; Keywords: 
-;; Compatibility: 
-;; 
+;; URL:
+;; Doc URL:
+;; Keywords:
+;; Compatibility:
+;;
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
-;; 
-;;; Commentary: 
-;; 
-;; 
-;; 
+;;
+;;; Commentary:
+;;
+;;
+;;
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
-;; 
+;;
 ;;; Change Log:
-;; 
-;; 
+;;
+;;
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
-;; 
+;;
 ;; This program is free software: you can redistribute it and/or modify
 ;; it under the terms of the GNU General Public License as published by
 ;; the Free Software Foundation, either version 3 of the License, or (at
 ;; your option) any later version.
-;; 
+;;
 ;; This program is distributed in the hope that it will be useful, but
 ;; WITHOUT ANY WARRANTY; without even the implied warranty of
 ;; MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU
 ;; General Public License for more details.
-;; 
+;;
 ;; You should have received a copy of the GNU General Public License
 ;; along with GNU Emacs.  If not, see <https://www.gnu.org/licenses/>.
-;; 
+;;
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
-;; 
+;;
 ;;; Code:
 
 ;; Provide a useful error trace if loading this monster fails.
@@ -54,7 +54,7 @@
 ;;(if (boundp 'running-xemacs)
 ;;    (global-set-key [(shift button2)]        ;<shift>-mouse2 to load
 ;;      'browse-url-at-mouse)                  ;url at point into
-;;					     ;netscape.
+;;               ;netscape.
 ;;  ;(else GNU Emacs
 ;;  (global-set-key [(shift down-mouse-2)]     ;<shift>-mouse2 to load
 ;;    'browse-url-at-mouse)                    ;url at point into netscape.
@@ -166,27 +166,29 @@
 ;;(add-hook 'after-change-major-mode-hook 'fci-mode)
 
 ;; Add hooks for various modes
-(with-eval-after-load 'cc-mode
-  (add-hook 'cc-mode-hook 'fci-mode))
-(with-eval-after-load 'shell-mode
-  (add-hook 'shell-mode-hook 'fci-mode))
-(with-eval-after-load 'conf-mode
-  (add-hook 'conf-mode-hook 'fci-mode))
-(with-eval-after-load 'python-mode
-  (add-hook 'python-mode-hook 'fci-mode))
-(with-eval-after-load 'yaml-mode
-  (add-hook 'yaml-mode-hook 'fci-mode))
-(with-eval-after-load 'emacs-lisp-mode
-  (add-hook 'emacs-lisp-mode-hook 'fci-mode))
-(with-eval-after-load 'php-mode-hook
-  (add-hook 'php-mode-hook 'fci-mode))
-(with-eval-after-load 'html-mode
-  (add-hook 'html-mode-hook 'fci-mode))
-(with-eval-after-load 'nxml-mode
-  (add-hook 'nxml-mode-hook 'fci-mode))
-(with-eval-after-load 'graphviz-dot-mode
-  (add-hook 'graphviz-dot-mode-hook 'fci-mode))
-
+;; (with-eval-after-load 'cc-mode
+;;   (add-hook 'cc-mode-hook 'fci-mode))
+;; (with-eval-after-load 'shell-mode
+;;   (add-hook 'shell-mode-hook 'fci-mode))
+;; (with-eval-after-load 'conf-mode
+;;   (add-hook 'conf-mode-hook 'fci-mode))
+;; (with-eval-after-load 'python-mode
+;;   (add-hook 'python-mode-hook 'fci-mode))
+;; (with-eval-after-load 'yaml-mode
+;;   (add-hook 'yaml-mode-hook 'fci-mode))
+;; (with-eval-after-load 'emacs-lisp-mode
+;;   (add-hook 'emacs-lisp-mode-hook 'fci-mode))
+;; (with-eval-after-load 'php-mode-hook
+;;   (add-hook 'php-mode-hook 'fci-mode))
+;; (with-eval-after-load 'html-mode
+;;   (add-hook 'html-mode-hook 'fci-mode))
+;; (with-eval-after-load 'nxml-mode
+;;   (add-hook 'nxml-mode-hook 'fci-mode))
+;; (with-eval-after-load 'graphviz-dot-mode
+;;   (add-hook 'graphviz-dot-mode-hook 'fci-mode))
+;; Activate column indicator as global mode
+;;(add-hook 'prog-mode-hook 'turn-on-fci-mode)
+;;(add-hook 'text-mode-hook 'turn-on-fci-mode)
 
 ;; Header
 ;;(autoload 'auto-update-file-header "header2")
