@@ -1,48 +1,48 @@
-;;; config.el --- 
-;; 
+;;; config.el ---
+;;
 ;; Filename: config.el
-;; Description: 
+;; Description:
 ;; Author: Geoff S Derber
-;; Maintainer: 
+;; Maintainer:
 ;; Created: Mon Jun 10 18:42:03 2019 (-0400)
-;; Version: 
+;; Version:
 ;; Package-Requires: ()
 ;; Last-Updated: Mon Jun 10 18:42:09 2019 (-0400)
 ;;           By: Geoff S Derber
 ;;     Update #: 1
-;; URL: 
-;; Doc URL: 
-;; Keywords: 
-;; Compatibility: 
-;; 
+;; URL:
+;; Doc URL:
+;; Keywords:
+;; Compatibility:
+;;
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
-;; 
-;;; Commentary: 
-;; 
-;; 
-;; 
+;;
+;;; Commentary:
+;;
+;;
+;;
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
-;; 
+;;
 ;;; Change Log:
-;; 
-;; 
+;;
+;;
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
-;; 
+;;
 ;; This program is free software: you can redistribute it and/or modify
 ;; it under the terms of the GNU General Public License as published by
 ;; the Free Software Foundation, either version 3 of the License, or (at
 ;; your option) any later version.
-;; 
+;;
 ;; This program is distributed in the hope that it will be useful, but
 ;; WITHOUT ANY WARRANTY; without even the implied warranty of
 ;; MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU
 ;; General Public License for more details.
-;; 
+;;
 ;; You should have received a copy of the GNU General Public License
 ;; along with GNU Emacs.  If not, see <https://www.gnu.org/licenses/>.
-;; 
+;;
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
-;; 
+;;
 ;;; Code:
 
 ;; Provide a useful error trace if loading this monster fails.
@@ -54,7 +54,7 @@
 ;;(if (boundp 'running-xemacs)
 ;;    (global-set-key [(shift button2)]        ;<shift>-mouse2 to load
 ;;      'browse-url-at-mouse)                  ;url at point into
-;;					     ;netscape.
+;;               ;netscape.
 ;;  ;(else GNU Emacs
 ;;  (global-set-key [(shift down-mouse-2)]     ;<shift>-mouse2 to load
 ;;    'browse-url-at-mouse)                    ;url at point into netscape.
@@ -135,10 +135,10 @@
       (quote browse-url-firefox))
 
 ;; Neotree settings:
-(when (display-graphic-p)
-  (setq neo-theme icons)
-  (setq neo-vc-integration face)
-  )
+;; (when (display-graphic-p)
+;;   (setq neo-theme icons)
+;;   (setq neo-vc-integration face)
+;;   )
 
 ;;(setq browse-url-new-window-p t)           ;open a fresh netscape window.
 ;;(if (boundp 'running-xemacs)
@@ -190,7 +190,6 @@
 ;;   (add-hook 'nxml-mode-hook 'fci-mode))
 ;; (with-eval-after-load 'graphviz-dot-mode
 ;;   (add-hook 'graphviz-dot-mode-hook 'fci-mode))
-
 
 ;; Header
 ;;(autoload 'auto-update-file-header "header2")
