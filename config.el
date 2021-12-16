@@ -154,6 +154,10 @@
 
 
 
+
+;;(setq-default dotspacemacs-configuration-layers '(
+;; (keyboard-layout :variables kl-layout 'dvorak)))
+
 ;; Don't truncate lines in vertically split windows (suggested by Jeff).
 ;;(setq truncate-partial-width-windows nil)
 
@@ -166,26 +170,26 @@
 ;;(add-hook 'after-change-major-mode-hook 'fci-mode)
 
 ;; Add hooks for various modes
-(with-eval-after-load 'cc-mode
-  (add-hook 'cc-mode-hook 'fci-mode))
-(with-eval-after-load 'shell-mode
-  (add-hook 'shell-mode-hook 'fci-mode))
-(with-eval-after-load 'conf-mode
-  (add-hook 'conf-mode-hook 'fci-mode))
-(with-eval-after-load 'python-mode
-  (add-hook 'python-mode-hook 'fci-mode))
-(with-eval-after-load 'yaml-mode
-  (add-hook 'yaml-mode-hook 'fci-mode))
-(with-eval-after-load 'emacs-lisp-mode
-  (add-hook 'emacs-lisp-mode-hook 'fci-mode))
-(with-eval-after-load 'php-mode-hook
-  (add-hook 'php-mode-hook 'fci-mode))
-(with-eval-after-load 'html-mode
-  (add-hook 'html-mode-hook 'fci-mode))
-(with-eval-after-load 'nxml-mode
-  (add-hook 'nxml-mode-hook 'fci-mode))
-(with-eval-after-load 'graphviz-dot-mode
-  (add-hook 'graphviz-dot-mode-hook 'fci-mode))
+;; (with-eval-after-load 'cc-mode
+;;   (add-hook 'cc-mode-hook 'fci-mode))
+;; (with-eval-after-load 'shell-mode
+;;   (add-hook 'shell-mode-hook 'fci-mode))
+;; (with-eval-after-load 'conf-mode
+;;   (add-hook 'conf-mode-hook 'fci-mode))
+;; (with-eval-after-load 'python-mode
+;;   (add-hook 'python-mode-hook 'fci-mode))
+;; (with-eval-after-load 'yaml-mode
+;;   (add-hook 'yaml-mode-hook 'fci-mode))
+;; (with-eval-after-load 'emacs-lisp-mode
+;;   (add-hook 'emacs-lisp-mode-hook 'fci-mode))
+;; (with-eval-after-load 'php-mode-hook
+;;   (add-hook 'php-mode-hook 'fci-mode))
+;; (with-eval-after-load 'html-mode
+;;   (add-hook 'html-mode-hook 'fci-mode))
+;; (with-eval-after-load 'nxml-mode
+;;   (add-hook 'nxml-mode-hook 'fci-mode))
+;; (with-eval-after-load 'graphviz-dot-mode
+;;   (add-hook 'graphviz-dot-mode-hook 'fci-mode))
 
 
 ;; Header

@@ -65,45 +65,26 @@
    helm
    ;; ivy
 
-     ;; 4. Distributionss
-     ;; spacemacs
-     ;; spacemacs-base
-     ;; spacemacs-bootstrap
+   ;; 4. E-mail
+   gnus
 
-     ;; 5. Emacs
-     ;;better-defaults
+   ;; 5. Emacs
+   ;;better-defaults
    (ibuffer :variables
             ibuffer-group-buffers-by 'projects)
 
-   ;; 6. Email
-   gnus
+   ;; 6. File trees
+   neotree
 
-   ;; 7. Frameworks
+   ;; 7. Fonts
+   unicode-fonts
 
    ;; 8. Fun
-   ;;emoji (Moved to drbr-gui)
-   ;;games (Moved to drbr-gui)
-   ;;xkcd (Moved to drbr-gui)
 
    ;; 9. international
-   ;;(keyboard-layout :variables kl-layout 'dvorak)
+   ;;keyboard-layout
 
    ;; 10. Programming  and markup languages
-   c-c++
-   csv
-   emacs-lisp
-   graphviz
-   html
-   lua
-   markdown
-   php
-   (python :variables
-           python-test-runner 'pytest
-           python-spacemacs-indent-guess nil)
-   shell-scripts
-   sql
-   windows-scripts
-   yaml
 
    ;; 11. Misc
 
@@ -134,7 +115,7 @@
    ;;             geolocation-enable-weather-forecast t)
    nginx
    pandoc
-   puppet
+   ;;puppet
    (shell :variables
           shell-default-height 30
           shell-default-position 'bottom
