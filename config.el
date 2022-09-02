@@ -159,6 +159,10 @@
 
 
 
+
+;;(setq-default dotspacemacs-configuration-layers '(
+;; (keyboard-layout :variables kl-layout 'dvorak)))
+
 ;; Don't truncate lines in vertically split windows (suggested by Jeff).
 ;;(setq truncate-partial-width-windows nil)
 
@@ -191,9 +195,6 @@
 ;;   (add-hook 'nxml-mode-hook 'fci-mode))
 ;; (with-eval-after-load 'graphviz-dot-mode
 ;;   (add-hook 'graphviz-dot-mode-hook 'fci-mode))
-;; Activate column indicator as global mode
-;;(add-hook 'prog-mode-hook 'turn-on-fci-mode)
-;;(add-hook 'text-mode-hook 'turn-on-fci-mode)
 
 ;; Header
 ;;(autoload 'auto-update-file-header "header2")
