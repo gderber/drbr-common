@@ -134,6 +134,11 @@
 (setq browse-url-browser-function          ;call netscape on URLs.
       (quote browse-url-firefox))
 
+
+;; Treemacs settings:
+;;(setq-default dotspacemacs-configuration-layers '(
+;;  (treemacs :variables treemacs-use-follow-mode t)))
+
 ;; Neotree settings:
 ;; (when (display-graphic-p)
 ;;   (setq neo-theme icons)

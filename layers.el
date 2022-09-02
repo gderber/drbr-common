@@ -47,105 +47,106 @@
 
 (configuration-layer/declare-layers
  '(
-   ;; 1. Chat
+   ;; 1.
+
+   ;; 2. Chat
    ;; erc
    ;; jabber
    ;; rcirc
    slack
 
-   ;; 2. Checkers
+   ;; 3. Checkers
    spell-checking
    syntax-checking
 
-   ;; 3. Completion
+   ;; 4. Completion
    (auto-completion :variables
                     auto-completion-return-key-behavior 'complete
                     auto-completion-tab-key-behavior 'complete
                     auto-completion-enable-snippets-in-popup t)
    helm
    ;; ivy
+   ;; templates
 
-     ;; 4. Distributionss
-     ;; spacemacs
-     ;; spacemacs-base
-     ;; spacemacs-bootstrap
+   ;; 5. Email
+   gnus
 
-     ;; 5. Emacs
-     ;;better-defaults
+   ;; 6. Emacs
+   ;;better-defaults
    (ibuffer :variables
             ibuffer-group-buffers-by 'projects)
 
-   ;; 6. Email
-   gnus
+   ;; 7. File trees
+   treemacs
 
-   ;; 7. Frameworks
+   ;; 8. Fonts
 
-   ;; 8. Fun
+   ;; 9. Fun
    ;;emoji (Moved to drbr-gui)
    ;;games (Moved to drbr-gui)
    ;;xkcd (Moved to drbr-gui)
 
-   ;; 9. international
+   ;; 10. international
    ;;(keyboard-layout :variables kl-layout 'dvorak)
-
-   ;; 10. Programming languages
-   ;; Remainder moved to drbr-git layer
-   csv
-   graphviz
-   markdown
-   shell-scripts
-   yaml
 
    ;; 11. Misc
 
-   ;; 12. Operating Systems
+   ;; 12. Music
+   ;;spotify
 
-   ;; 13. Pair Programing
+   ;; 13. Operating Systems
 
-   ;; 14. Source Control
+   ;; 14. Pair programming
+
+   ;; 15. Programming languages
    ;; Moved to drbr-git layer
 
-   ;; 15. Spacemacs distribution layers
+   ;; 16. Readers
+   ;;elfeed
 
-   ;; 16. Tags
+   ;; 17.
+
+   ;; 18. Source Control
+   ;; Moved to drbr-git layer
+
+   ;; 19. Spacemacs
+
+   ;; 20. Tagging
    ;;cscope
    ;; TODO Fix errors (possbily recompile global from source)
-   ;;gtags
+   gtags
 
-   ;; 17. Themes
+   ;; 21. Themes
    colors
    themes-megapack
    theming
 
-   ;; 18. Tools
+   ;; 22. Tools
    command-log
-   docker
-   finance
+   ;;docker
+   ;;finance
    ;;(geolocation :variables
    ;;             geolocation-enable-weather-forecast t)
-   nginx
+   ;;nginx
    pandoc
    (shell :variables
           shell-default-height 30
           shell-default-position 'bottom
           shell-default-shell 'ansi-term)
-   ;;speed-reading
-   systemd
+   ;;systemd
    search-engine
 
-   ;; 19. Vim
+   ;; 23. Vim
    ;;evil-cleverparens
 
-   ;; 20. Web Services
-   ;;elfeed
+   ;; 24. Web Services
+   ;;confluence
+   ;;eaf
    ;;evernote
    search-engine
-   ;;spotify
-   ;;twititer
+   ;;twitteer
    ;;wakatime
 
-   ;; Misc
-   ;;ranger
 
    ))
 
