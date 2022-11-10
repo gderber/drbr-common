@@ -53,7 +53,7 @@
    ;; erc
    ;; jabber
    ;; rcirc
-   slack
+   ;; slack
 
    ;; 3. Checkers
    spell-checking
@@ -73,26 +73,49 @@
 
    ;; 6. Emacs
    ;;better-defaults
+   ;;helpful
    (ibuffer :variables
             ibuffer-group-buffers-by 'projects)
+   ;;org (Moved to drbr-org)
+   ;;outshine
+   ;;quickurl
+   ;;semantic
+   ;;smex
+   ;;tabs
+   ;;typography
 
    ;; 7. File trees
+   ;;neotree
    treemacs
 
    ;; 8. Fonts
+   ;;unicode-fonts
 
    ;; 9. Fun
    ;;emoji (Moved to drbr-gui)
    ;;games (Moved to drbr-gui)
+   ;;selectric (Moved to drbr-gui)
    ;;xkcd (Moved to drbr-gui)
 
    ;; 10. international
+   ;;chinese
+   ;;japanese
    ;;(keyboard-layout :variables kl-layout 'dvorak)
 
    ;; 11. Misc
+   ;;copy-as-format
+   ;;dtrt-indent
+   ;;ietf
+   ;;multiple-cursors
+   ;;nav-flash
+   ;;parinfer
 
    ;; 12. Music
+   ;;alda
+   ;;extempore
+   ;;pianobar
    ;;spotify
+   ;;tidalcycles
 
    ;; 13. Operating Systems
 
@@ -122,6 +145,10 @@
    theming
 
    ;; 22. Tools
+   ;;ansible
+   ;;bm
+   ;;cfengine
+   ;;chrome
    command-log
    ;;docker
    ;;finance
@@ -129,6 +156,7 @@
    ;;             geolocation-enable-weather-forecast t)
    ;;nginx
    pandoc
+   pass
    (shell :variables
           shell-default-height 30
           shell-default-position 'bottom
@@ -143,7 +171,6 @@
    ;;confluence
    ;;eaf
    ;;evernote
-   search-engine
    ;;twitteer
    ;;wakatime
 

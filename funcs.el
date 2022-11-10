@@ -1,48 +1,48 @@
-;;; funcs.el --- 
-;; 
+;;; funcs.el ---
+;;
 ;; Filename: funcs.el
-;; Description: 
+;; Description:
 ;; Author: Geoff S Derber
-;; Maintainer: 
+;; Maintainer:
 ;; Created: Mon Jun 10 18:41:17 2019 (-0400)
-;; Version: 
+;; Version:
 ;; Package-Requires: ()
 ;; Last-Updated: Mon Jun 10 18:48:10 2019 (-0400)
 ;;           By: Geoff S Derber
 ;;     Update #: 1
-;; URL: 
-;; Doc URL: 
-;; Keywords: 
-;; Compatibility: 
-;; 
+;; URL:
+;; Doc URL:
+;; Keywords:
+;; Compatibility:
+;;
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
-;; 
-;;; Commentary: 
-;; 
-;; 
-;; 
+;;
+;;; Commentary:
+;;
+;;
+;;
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
-;; 
+;;
 ;;; Change Log:
-;; 
-;; 
+;;
+;;
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
-;; 
+;;
 ;; This program is free software: you can redistribute it and/or modify
 ;; it under the terms of the GNU General Public License as published by
 ;; the Free Software Foundation, either version 3 of the License, or (at
 ;; your option) any later version.
-;; 
+;;
 ;; This program is distributed in the hope that it will be useful, but
 ;; WITHOUT ANY WARRANTY; without even the implied warranty of
 ;; MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU
 ;; General Public License for more details.
-;; 
+;;
 ;; You should have received a copy of the GNU General Public License
 ;; along with GNU Emacs.  If not, see <https://www.gnu.org/licenses/>.
-;; 
+;;
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
-;; 
+;;
 ;;; Code:
 
 (defun drbr-common/insert-date (prefix)
@@ -50,10 +50,10 @@
 ;;   two prefix arguments, write out the day and month name."
   (interactive "P")
   (let ((format (cond
-		 ((not prefix) "%d.%m.%Y")
-		 ((equal prefix '(4)) "%Y-%m-%d")
-		 ((equal prefix '(16)) "%A, %d. %B %Y")))
-	(system-time-locale "de_DE"))
+     ((not prefix) "%d.%m.%Y")
+     ((equal prefix '(4)) "%Y-%m-%d")
+     ((equal prefix '(16)) "%A, %d. %B %Y")))
+  (system-time-locale "de_DE"))
     (insert (format-time-string format))))
 
 (defun drbr-common/fix-comments ()
@@ -76,8 +76,8 @@
        (insert "\n"))
       ;; now fill the lines that are too long
       (if (and (not (end-of-line))
-	       (< fill-column (current-column)))
-	  (c-fill-paragraph)))))
+         (< fill-column (current-column)))
+    (c-fill-paragraph)))))
 
 ;; Supply random fortune cookie
 (defun drbr-common/fortune-scratch-message()
